@@ -13,7 +13,12 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        pixel: ['Press Start 2P', 'cursive'],
+        body: ['Space Grotesk', 'sans-serif'],
+      },
       colors: {
+        "primary-glow": "hsl(var(--primary-glow))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
