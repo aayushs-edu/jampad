@@ -143,96 +143,6 @@
       }
     },
     {
-      "gameId": 476672,
-      "gameUrl": "https://sobad.itch.io/jimposters",
-      "overallRank": 2,
-      "topCategories": [
-        "Game Design",
-        "Fun",
-        "Innovation",
-        "Theme"
-      ],
-      "resultData": {
-        "cover_url": "https://img.itch.zone/aW1nLzI0NDg5NDYuanBn/300x240%23c/FXVnwW.jpg",
-        "contributors": [
-          {
-            "name": "SoBad",
-            "id": 1746864
-          }
-        ],
-        "url": "https://itch.io/jam/cgj/rate/476672",
-        "title": "Jimposters",
-        "criteria": [
-          {
-            "name": "Game Design",
-            "score": 4.4242424242424,
-            "raw_score": 4.4242424242424,
-            "rank": 2
-          },
-          {
-            "name": "Fun",
-            "score": 4.2121212121212,
-            "raw_score": 4.2121212121212,
-            "rank": 3
-          },
-          {
-            "name": "Innovation",
-            "score": 4.3030303030303,
-            "raw_score": 4.3030303030303,
-            "rank": 6
-          },
-          {
-            "name": "Theme",
-            "score": 4.1818181818182,
-            "raw_score": 4.1818181818182,
-            "rank": 8
-          },
-          {
-            "name": "Graphics",
-            "score": 4.0909090909091,
-            "raw_score": 4.0909090909091,
-            "rank": 51
-          },
-          {
-            "name": "Audio",
-            "score": 3.6060606060606,
-            "raw_score": 3.6060606060606,
-            "rank": 75
-          }
-        ],
-        "score": 4.1363636363636,
-        "rating_count": 33,
-        "id": 476672,
-        "rank": 2,
-        "raw_score": 4.1363636363636
-      },
-      "entryData": {
-        "rating_count": 33,
-        "created_at": "2019-08-31 14:35:44",
-        "coolness": 59,
-        "id": 86742,
-        "url": "/jam/cgj/rate/476672",
-        "game": {
-          "cover_color": "#101010",
-          "id": 476672,
-          "user": {
-            "name": "SoBad",
-            "url": "https://sobad.itch.io",
-            "id": 1746864
-          },
-          "url": "https://sobad.itch.io/jimposters",
-          "short_text": "Kill carefully, now.",
-          "title": "Jimposters",
-          "platforms": [
-            "windows",
-            "osx"
-          ],
-          "cover": "https://img.itch.zone/aW1nLzI0NDg5NDYuanBn/300x240%23c/FXVnwW.jpg"
-        }
-      },
-      "details": null
-    },
-    {
       "gameId": 476041,
       "gameUrl": "https://niksnk.itch.io/shadow-deflect",
       "overallRank": 23,
@@ -694,95 +604,6 @@
       }
     },
     {
-      "gameId": 475700,
-      "gameUrl": "https://beardordie.itch.io/buttonslidertoggle",
-      "overallRank": 39,
-      "topCategories": [
-        "Game Design",
-        "Innovation",
-        "Theme"
-      ],
-      "resultData": {
-        "cover_url": "https://img.itch.zone/aW1nLzI0NDI5MzMuanBn/300x240%23c/gCZXWH.jpg",
-        "contributors": [
-          {
-            "name": "Beard or Die",
-            "id": 622890
-          }
-        ],
-        "url": "https://itch.io/jam/cgj/rate/475700",
-        "title": "ButtonSliderToggle",
-        "criteria": [
-          {
-            "name": "Game Design",
-            "score": 4.1,
-            "raw_score": 4.1,
-            "rank": 6
-          },
-          {
-            "name": "Fun",
-            "score": 3.5,
-            "raw_score": 3.5,
-            "rank": 81
-          },
-          {
-            "name": "Innovation",
-            "score": 4.5,
-            "raw_score": 4.5,
-            "rank": 1
-          },
-          {
-            "name": "Theme",
-            "score": 4.1,
-            "raw_score": 4.1,
-            "rank": 13
-          },
-          {
-            "name": "Graphics",
-            "score": 2.8,
-            "raw_score": 2.8,
-            "rank": 451
-          },
-          {
-            "name": "Audio",
-            "score": 2.7,
-            "raw_score": 2.7,
-            "rank": 373
-          }
-        ],
-        "score": 3.6166666666667,
-        "rating_count": 10,
-        "id": 475700,
-        "rank": 39,
-        "raw_score": 3.6166666666667
-      },
-      "entryData": {
-        "rating_count": 10,
-        "created_at": "2019-08-30 04:52:00",
-        "coolness": 5,
-        "id": 86269,
-        "url": "/jam/cgj/rate/475700",
-        "game": {
-          "cover_color": "#eeeeee",
-          "id": 475700,
-          "user": {
-            "name": "Beard or Die",
-            "url": "https://beardordie.itch.io",
-            "id": 622890
-          },
-          "url": "https://beardordie.itch.io/buttonslidertoggle",
-          "short_text": "A triple-A quality full-length non-prototype game",
-          "title": "ButtonSliderToggle",
-          "platforms": [
-            "windows",
-            "web"
-          ],
-          "cover": "https://img.itch.zone/aW1nLzI0NDI5MzMuanBn/300x240%23c/gCZXWH.jpg"
-        }
-      },
-      "details": null
-    },
-    {
       "gameId": 473242,
       "gameUrl": "https://shoze.itch.io/liar",
       "overallRank": 26,
@@ -1152,93 +973,6 @@
       }
     },
     {
-      "gameId": 475557,
-      "gameUrl": "https://sominstudios.itch.io/white-world",
-      "overallRank": 45,
-      "topCategories": [
-        "Game Design"
-      ],
-      "resultData": {
-        "cover_url": "https://img.itch.zone/aW1nLzI0NDQxMzMucG5n/300x240%23c/8DLKoP.png",
-        "contributors": [
-          {
-            "name": "SominStudios",
-            "id": 1491496
-          }
-        ],
-        "url": "https://itch.io/jam/cgj/rate/475557",
-        "title": "White World",
-        "criteria": [
-          {
-            "name": "Game Design",
-            "score": 4.05,
-            "raw_score": 4.05,
-            "rank": 11
-          },
-          {
-            "name": "Fun",
-            "score": 3.75,
-            "raw_score": 3.75,
-            "rank": 27
-          },
-          {
-            "name": "Innovation",
-            "score": 3.8,
-            "raw_score": 3.8,
-            "rank": 23
-          },
-          {
-            "name": "Theme",
-            "score": 2.85,
-            "raw_score": 2.85,
-            "rank": 393
-          },
-          {
-            "name": "Graphics",
-            "score": 3.4,
-            "raw_score": 3.4,
-            "rank": 241
-          },
-          {
-            "name": "Audio",
-            "score": 3.7,
-            "raw_score": 3.7,
-            "rank": 61
-          }
-        ],
-        "score": 3.5916666666667,
-        "rating_count": 20,
-        "id": 475557,
-        "rank": 45,
-        "raw_score": 3.5916666666667
-      },
-      "entryData": {
-        "rating_count": 20,
-        "created_at": "2019-08-30 15:20:34",
-        "coolness": 16,
-        "id": 86337,
-        "url": "/jam/cgj/rate/475557",
-        "game": {
-          "cover_color": "#c2c2c2",
-          "id": 475557,
-          "user": {
-            "name": "SominStudios",
-            "url": "https://sominstudios.itch.io",
-            "id": 1491496
-          },
-          "url": "https://sominstudios.itch.io/white-world",
-          "short_text": "Can You Escape The Endless Maze?",
-          "title": "White World",
-          "platforms": [
-            "windows",
-            "web"
-          ],
-          "cover": "https://img.itch.zone/aW1nLzI0NDQxMzMucG5n/300x240%23c/8DLKoP.png"
-        }
-      },
-      "details": null
-    },
-    {
       "gameId": 476211,
       "gameUrl": "https://choochoothetrain.itch.io/the-suspects",
       "overallRank": 8,
@@ -1427,7 +1161,13 @@
           "cover": "https://img.itch.zone/aW1nLzI0NTQ2NDcucG5n/300x240%23c/GDtN0i.png"
         }
       },
-      "details": null
+      "details": {
+        "title": "After a liar's funeral",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1nLzI0NTQ2NDcucG5n/original/1Crnaq.png"
+        ]
+      }
     },
     {
       "gameId": 476781,
@@ -2242,91 +1982,6 @@
           ]
         }
       }
-    },
-    {
-      "gameId": 477211,
-      "gameUrl": "https://sayugames.itch.io/part",
-      "overallRank": 24,
-      "topCategories": [
-        "Innovation"
-      ],
-      "resultData": {
-        "cover_url": "https://img.itch.zone/aW1nLzI0NTE4ODAucG5n/300x240%23c/%2F3IlVi.png",
-        "contributors": [
-          {
-            "name": "SayuGames",
-            "id": 690677
-          }
-        ],
-        "url": "https://itch.io/jam/cgj/rate/477211",
-        "title": "Part",
-        "criteria": [
-          {
-            "name": "Game Design",
-            "score": 3.875,
-            "raw_score": 3.875,
-            "rank": 21
-          },
-          {
-            "name": "Fun",
-            "score": 3.5,
-            "raw_score": 3.5,
-            "rank": 81
-          },
-          {
-            "name": "Innovation",
-            "score": 4.125,
-            "raw_score": 4.125,
-            "rank": 7
-          },
-          {
-            "name": "Theme",
-            "score": 3.75,
-            "raw_score": 3.75,
-            "rank": 64
-          },
-          {
-            "name": "Graphics",
-            "score": 3.25,
-            "raw_score": 3.25,
-            "rank": 291
-          },
-          {
-            "name": "Audio",
-            "score": 3.875,
-            "raw_score": 3.875,
-            "rank": 30
-          }
-        ],
-        "score": 3.7291666666667,
-        "rating_count": 8,
-        "id": 477211,
-        "rank": 24,
-        "raw_score": 3.7291666666667
-      },
-      "entryData": {
-        "rating_count": 8,
-        "created_at": "2019-08-31 18:57:04",
-        "coolness": 8,
-        "id": 87407,
-        "url": "/jam/cgj/rate/477211",
-        "game": {
-          "url": "https://sayugames.itch.io/part",
-          "user": {
-            "name": "SayuGames",
-            "url": "https://sayugames.itch.io",
-            "id": 690677
-          },
-          "id": 477211,
-          "short_text": "A game made for Community Game Jam",
-          "title": "Part",
-          "platforms": [
-            "web"
-          ],
-          "cover": "https://img.itch.zone/aW1nLzI0NTE4ODAucG5n/300x240%23c/%2F3IlVi.png"
-        }
-      },
-      "details": null
     },
     {
       "gameId": 476520,
@@ -3963,92 +3618,6 @@
       }
     },
     {
-      "gameId": 475280,
-      "gameUrl": "https://jokentertainment.itch.io/test",
-      "overallRank": 127,
-      "topCategories": [
-        "Theme"
-      ],
-      "resultData": {
-        "cover_url": "https://img.itch.zone/aW1nLzI0NDAyOTMucG5n/300x240%23c/Yx9Rwz.png",
-        "contributors": [
-          {
-            "name": "jokentertainment",
-            "id": 1592235
-          }
-        ],
-        "url": "https://itch.io/jam/cgj/rate/475280",
-        "title": "A_viLlaGe!",
-        "criteria": [
-          {
-            "name": "Game Design",
-            "score": 3.1875,
-            "raw_score": 3.1875,
-            "rank": 248
-          },
-          {
-            "name": "Fun",
-            "score": 3.25,
-            "raw_score": 3.25,
-            "rank": 184
-          },
-          {
-            "name": "Innovation",
-            "score": 2.8125,
-            "raw_score": 2.8125,
-            "rank": 324
-          },
-          {
-            "name": "Theme",
-            "score": 4.0625,
-            "raw_score": 4.0625,
-            "rank": 15
-          },
-          {
-            "name": "Graphics",
-            "score": 3.75,
-            "raw_score": 3.75,
-            "rank": 127
-          },
-          {
-            "name": "Audio",
-            "score": 2.875,
-            "raw_score": 2.875,
-            "rank": 303
-          }
-        ],
-        "score": 3.3229166666667,
-        "rating_count": 16,
-        "id": 475280,
-        "rank": 127,
-        "raw_score": 3.3229166666667
-      },
-      "entryData": {
-        "rating_count": 16,
-        "created_at": "2019-08-29 18:04:21",
-        "coolness": 3,
-        "id": 86222,
-        "url": "/jam/cgj/rate/475280",
-        "game": {
-          "cover_color": "#232323",
-          "id": 475280,
-          "user": {
-            "name": "jokentertainment",
-            "url": "https://jokentertainment.itch.io",
-            "id": 1592235
-          },
-          "url": "https://jokentertainment.itch.io/test",
-          "short_text": "wHaT wIil yOu dO?!...",
-          "title": "A_viLlaGe!",
-          "platforms": [
-            "web"
-          ],
-          "cover": "https://img.itch.zone/aW1nLzI0NDAyOTMucG5n/300x240%23c/Yx9Rwz.png"
-        }
-      },
-      "details": null
-    },
-    {
       "gameId": 477138,
       "gameUrl": "https://aldravan.itch.io/fake-prin",
       "overallRank": 65,
@@ -4132,7 +3701,14 @@
           "cover": "https://img.itch.zone/aW1nLzI0NTExNDgucG5n/300x240%23c/UFPtvW.png"
         }
       },
-      "details": null
+      "details": {
+        "title": "Fake Prin",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1hZ2UvNDc3MTM4LzI0NTE1NDEucG5n/original/xyXA83.png",
+          "https://img.itch.zone/aW1hZ2UvNDc3MTM4LzI0NTE1NDMucG5n/original/Az2JPK.png"
+        ]
+      }
     },
     {
       "gameId": 476121,
@@ -5327,91 +4903,6 @@
           ]
         }
       }
-    },
-    {
-      "gameId": 476622,
-      "gameUrl": "https://explayration.itch.io/i-want-you",
-      "overallRank": 179,
-      "topCategories": [
-        "Audio"
-      ],
-      "resultData": {
-        "cover_url": "https://img.itch.zone/aW1nLzI0NDg0NTUucG5n/300x240%23c/p2YhNi.png",
-        "contributors": [
-          {
-            "name": "exPLAYration",
-            "id": 738014
-          }
-        ],
-        "url": "https://itch.io/jam/cgj/rate/476622",
-        "title": "I want you!",
-        "criteria": [
-          {
-            "name": "Game Design",
-            "score": 3.4444444444444,
-            "raw_score": 3.4444444444444,
-            "rank": 124
-          },
-          {
-            "name": "Fun",
-            "score": 3.4444444444444,
-            "raw_score": 3.4444444444444,
-            "rank": 101
-          },
-          {
-            "name": "Innovation",
-            "score": 2.4444444444444,
-            "raw_score": 2.4444444444444,
-            "rank": 503
-          },
-          {
-            "name": "Theme",
-            "score": 2.3333333333333,
-            "raw_score": 2.3333333333333,
-            "rank": 614
-          },
-          {
-            "name": "Graphics",
-            "score": 3.4444444444444,
-            "raw_score": 3.4444444444444,
-            "rank": 224
-          },
-          {
-            "name": "Audio",
-            "score": 4.1111111111111,
-            "raw_score": 4.1111111111111,
-            "rank": 8
-          }
-        ],
-        "score": 3.2037037037037,
-        "rating_count": 9,
-        "id": 476622,
-        "rank": 179,
-        "raw_score": 3.2037037037037
-      },
-      "entryData": {
-        "rating_count": 9,
-        "created_at": "2019-08-31 15:22:31",
-        "coolness": 4,
-        "id": 86799,
-        "url": "/jam/cgj/rate/476622",
-        "game": {
-          "url": "https://explayration.itch.io/i-want-you",
-          "user": {
-            "name": "exPLAYration",
-            "url": "https://explayration.itch.io",
-            "id": 738014
-          },
-          "id": 476622,
-          "short_text": "I want you! - An fictional progapanda recruiting Game!",
-          "title": "I want you!",
-          "platforms": [
-            "web"
-          ],
-          "cover": "https://img.itch.zone/aW1nLzI0NDg0NTUucG5n/300x240%23c/p2YhNi.png"
-        }
-      },
-      "details": null
     },
     {
       "gameId": 476186,

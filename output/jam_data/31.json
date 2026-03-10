@@ -4756,7 +4756,13 @@
         "coolness": 0,
         "rating_count": 22
       },
-      "details": null
+      "details": {
+        "title": "wey",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1nLzI0MzQ2MDE4LnBuZw==/original/SB%2F1KV.png"
+        ]
+      }
     },
     {
       "gameId": 4070456,

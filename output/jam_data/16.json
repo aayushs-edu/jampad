@@ -5478,7 +5478,13 @@
           "cover_color": "#0e1014"
         }
       },
-      "details": null
+      "details": {
+        "title": "SILENZIO II",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1nLzI1NzMwMTg4LnBuZw==/original/grwVrU.png"
+        ]
+      }
     },
     {
       "gameId": 4292568,

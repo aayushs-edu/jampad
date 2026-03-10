@@ -4469,7 +4469,13 @@
           "url": "https://titan-and-lyra.itch.io/its-alive"
         }
       },
-      "details": null
+      "details": {
+        "title": "Its Alive",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1hZ2UvOTIxOTc1LzUyNDAzMTAucG5n/original/nxDWKz.png"
+        ]
+      }
     },
     {
       "gameId": 928834,

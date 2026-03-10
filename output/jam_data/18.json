@@ -4495,7 +4495,13 @@
         "created_at": "2023-12-01 15:52:54",
         "url": "/jam/game-off-2023/rate/2378052"
       },
-      "details": null
+      "details": {
+        "title": "OctoScale",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1nLzE0MTk3MjY5LmpwZw==/original/jdmI%2BR.jpg"
+        ]
+      }
     },
     {
       "gameId": 2398594,

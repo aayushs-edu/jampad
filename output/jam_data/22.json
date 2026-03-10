@@ -2995,7 +2995,13 @@
           ]
         }
       },
-      "details": null
+      "details": {
+        "title": "hamG",
+        "description": "",
+        "screenshots": [
+          "https://img.itch.zone/aW1nLzIzNjQ5NDcxLnBuZw==/original/hFWNnk.png"
+        ]
+      }
     },
     {
       "gameId": 3961754,
