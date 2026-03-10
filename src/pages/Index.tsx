@@ -6,12 +6,10 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import PixelClickEffect from "@/components/PixelClickEffect";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <PixelClickEffect />
       <Navbar />
 
       {/* Hero */}
@@ -35,10 +33,11 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="leading-tight mb-6 flex flex-col items-center"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6"
           >
-            <span className="font-pixel text-2xl md:text-4xl lg:text-5xl text-foreground">Your game jam</span>
-            <span className="font-pixel text-2xl md:text-4xl lg:text-5xl mt-2"><TypewriterHero /></span>
+            Your game jam
+            <br />
+            <TypewriterHero />
           </motion.h1>
 
           <motion.p
@@ -54,19 +53,8 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="max-w-xl mx-auto relative"
+            className="max-w-xl mx-auto"
           >
-            {/* Left curved arrow - pointing inward toward textbox */}
-            <svg className="absolute -left-14 md:-left-20 -top-6 w-14 md:w-18 h-16 text-primary/40 hidden sm:block rotate-[20deg]" viewBox="0 0 80 70" fill="none">
-              <path d="M10 5 C20 5, 50 0, 60 20 C70 40, 72 50, 72 60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
-              <path d="M66 55 L72 63 L78 55" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            {/* Right curved arrow - pointing inward toward textbox */}
-            <svg className="absolute -right-14 md:-right-20 -top-6 w-14 md:w-18 h-16 text-accent/40 hidden sm:block -rotate-[20deg]" viewBox="0 0 80 70" fill="none">
-              <path d="M70 5 C60 5, 30 0, 20 20 C10 40, 8 50, 8 60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
-              <path d="M2 55 L8 63 L14 55" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative flex items-center bg-card border-2 border-primary/20 rounded-xl overflow-hidden shadow-xl group-hover:border-primary/40 transition-colors duration-300">
