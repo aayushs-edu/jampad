@@ -35,10 +35,11 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="leading-tight mb-6 flex flex-col items-center"
+            className="leading-tight mb-6 text-center"
           >
             <span className="font-pixel text-2xl md:text-4xl lg:text-5xl text-foreground">Your game jam</span>
-            <span className="font-pixel text-2xl md:text-4xl lg:text-5xl mt-2"><TypewriterHero /></span>
+            <br />
+            <span className="font-pixel text-2xl md:text-4xl lg:text-5xl inline-block min-w-[280px] md:min-w-[400px]"><TypewriterHero /></span>
           </motion.h1>
 
           <motion.p
