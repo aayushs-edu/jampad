@@ -57,13 +57,13 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="max-w-xl mx-auto relative"
           >
-            {/* Left curved arrow - pointing inward toward textbox */}
-            <svg className="absolute -left-14 md:-left-20 -top-6 w-14 md:w-18 h-16 text-primary/40 hidden sm:block rotate-[20deg]" viewBox="0 0 80 70" fill="none">
+            {/* Left curved arrow - flipped, pointing inward */}
+            <svg className="absolute -left-14 md:-left-20 -top-6 w-14 md:w-18 h-16 text-primary/40 hidden sm:block rotate-[20deg] scale-x-[-1]" viewBox="0 0 80 70" fill="none">
               <path d="M10 5 C20 5, 50 0, 60 20 C70 40, 72 50, 72 60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
               <path d="M66 55 L72 63 L78 55" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            {/* Right curved arrow - pointing inward toward textbox */}
-            <svg className="absolute -right-14 md:-right-20 -top-6 w-14 md:w-18 h-16 text-accent/40 hidden sm:block -rotate-[20deg]" viewBox="0 0 80 70" fill="none">
+            {/* Right curved arrow - flipped, pointing inward */}
+            <svg className="absolute -right-14 md:-right-20 -top-6 w-14 md:w-18 h-16 text-accent/40 hidden sm:block -rotate-[20deg] scale-x-[-1]" viewBox="0 0 80 70" fill="none">
               <path d="M70 5 C60 5, 30 0, 20 20 C10 40, 8 50, 8 60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
               <path d="M2 55 L8 63 L14 55" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
