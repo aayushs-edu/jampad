@@ -56,15 +56,15 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="max-w-xl mx-auto relative"
           >
-            {/* Left curved arrow */}
-            <svg className="absolute -left-16 md:-left-24 top-1/2 -translate-y-1/2 w-16 md:w-20 h-20 text-primary/40 hidden sm:block" viewBox="0 0 80 80" fill="none">
-              <path d="M70 10 C60 10, 20 10, 15 40 C10 65, 20 70, 15 70" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
-              <path d="M10 65 L15 72 L20 64" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            {/* Left curved arrow - pointing inward toward textbox */}
+            <svg className="absolute -left-14 md:-left-20 -top-6 w-14 md:w-18 h-16 text-primary/40 hidden sm:block rotate-[20deg]" viewBox="0 0 80 70" fill="none">
+              <path d="M10 5 C20 5, 50 0, 60 20 C70 40, 72 50, 72 60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
+              <path d="M66 55 L72 63 L78 55" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            {/* Right curved arrow */}
-            <svg className="absolute -right-16 md:-right-24 top-1/2 -translate-y-1/2 w-16 md:w-20 h-20 text-accent/40 hidden sm:block" viewBox="0 0 80 80" fill="none">
-              <path d="M10 10 C20 10, 60 10, 65 40 C70 65, 60 70, 65 70" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
-              <path d="M60 64 L65 72 L70 65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            {/* Right curved arrow - pointing inward toward textbox */}
+            <svg className="absolute -right-14 md:-right-20 -top-6 w-14 md:w-18 h-16 text-accent/40 hidden sm:block -rotate-[20deg]" viewBox="0 0 80 70" fill="none">
+              <path d="M70 5 C60 5, 30 0, 20 20 C10 40, 8 50, 8 60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
+              <path d="M2 55 L8 63 L14 55" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
 
             <div className="relative group">
