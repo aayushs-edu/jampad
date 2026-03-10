@@ -35,11 +35,11 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl leading-tight mb-6"
           >
-            <span className="font-pixel text-3xl md:text-5xl lg:text-6xl">Your game jam</span>
+            <span className="font-pixel text-2xl md:text-4xl lg:text-5xl text-foreground">Your game jam</span>
             <br />
-            <TypewriterHero />
+            <span className="font-pixel text-2xl md:text-4xl lg:text-5xl"><TypewriterHero /></span>
           </motion.h1>
 
           <motion.p
@@ -55,8 +55,19 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="max-w-xl mx-auto"
+            className="max-w-xl mx-auto relative"
           >
+            {/* Left curved arrow */}
+            <svg className="absolute -left-16 md:-left-24 top-1/2 -translate-y-1/2 w-16 md:w-20 h-20 text-primary/40 hidden sm:block" viewBox="0 0 80 80" fill="none">
+              <path d="M70 10 C60 10, 20 10, 15 40 C10 65, 20 70, 15 70" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
+              <path d="M10 65 L15 72 L20 64" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            {/* Right curved arrow */}
+            <svg className="absolute -right-16 md:-right-24 top-1/2 -translate-y-1/2 w-16 md:w-20 h-20 text-accent/40 hidden sm:block" viewBox="0 0 80 80" fill="none">
+              <path d="M10 10 C20 10, 60 10, 65 40 C70 65, 60 70, 65 70" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4" />
+              <path d="M60 64 L65 72 L70 65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative flex items-center bg-card border-2 border-primary/20 rounded-xl overflow-hidden shadow-xl group-hover:border-primary/40 transition-colors duration-300">
