@@ -53,14 +53,22 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="max-w-xl mx-auto"
           >
-            <Button variant="hero" size="lg">
-              Start jamming →
-            </Button>
-            <Button variant="heroOutline" size="lg">
-              See how it works
-            </Button>
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500" />
+              <div className="relative flex items-center bg-card border-2 border-primary/20 rounded-xl overflow-hidden shadow-xl group-hover:border-primary/40 transition-colors duration-300">
+                <span className="pl-5 text-muted-foreground text-lg">🎮</span>
+                <input
+                  type="text"
+                  placeholder='Enter your jam theme… e.g. "Connections"'
+                  className="flex-1 bg-transparent px-4 py-4 text-base md:text-lg text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
+                />
+                <Button variant="hero" size="lg" className="m-1.5 rounded-lg">
+                  Start jamming →
+                </Button>
+              </div>
+            </div>
           </motion.div>
 
           <motion.p
