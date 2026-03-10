@@ -1,0 +1,27 @@
+{
+  "n": 83,
+  "name": "Quick Play 2022",
+  "url": "https://itch.io/jam/quick-play-2022",
+  "theme": "Tradition",
+  "slug": "quick-play-2022",
+  "jamMeta": {
+    "jamType": "ongoing",
+    "joined": "",
+    "entries": "56",
+    "title": "Quick Play 2022 ($80,000 in Prizes)",
+    "jamURL": "https://itch.io/jam/quick-play-2022",
+    "hosts": {
+      "Latinx in Gaming": "https://latinxingaming.itch.io",
+      "alhvi": "https://alhvi.itch.io",
+      "Chulatastic": "https://chulatastic.itch.io",
+      "#QuickPlay2022": "https://bsky.app/hashtag/QuickPlay2022"
+    },
+    "jamID": "324600"
+  },
+  "totalEntries": 42,
+  "ranked": false,
+  "hasCategories": false,
+  "needsManualSelection": true,
+  "categories": [],
+  "topGames": []
+}

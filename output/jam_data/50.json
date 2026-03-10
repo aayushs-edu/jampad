@@ -1,0 +1,25 @@
+{
+  "n": 50,
+  "name": "2022 Epic MegaJam",
+  "url": "https://itch.io/jam/2022-epic-megajam",
+  "theme": "As Above So Below",
+  "slug": "2022-epic-megajam",
+  "jamMeta": {
+    "jamType": "ongoing",
+    "joined": "",
+    "entries": "509",
+    "title": "2022 Epic MegaJam",
+    "jamURL": "https://itch.io/jam/2022-epic-megajam",
+    "hosts": {
+      "Unreal Engine": "https://unrealengine.itch.io",
+      "#UnrealJam": "https://bsky.app/hashtag/UnrealJam"
+    },
+    "jamID": "321654"
+  },
+  "totalEntries": 489,
+  "ranked": false,
+  "hasCategories": false,
+  "needsManualSelection": true,
+  "categories": [],
+  "topGames": []
+}

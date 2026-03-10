@@ -1,0 +1,25 @@
+{
+  "n": 80,
+  "name": "2019 Epic MegaJam",
+  "url": "https://itch.io/jam/2019-epic-megajam",
+  "theme": "DOWN TO EARTH",
+  "slug": "2019-epic-megajam",
+  "jamMeta": {
+    "jamType": "ongoing",
+    "joined": "",
+    "entries": "436",
+    "title": "2019 Epic MegaJam",
+    "jamURL": "https://itch.io/jam/2019-epic-megajam",
+    "hosts": {
+      "Unreal Engine": "https://unrealengine.itch.io",
+      "#UnrealJam": "https://bsky.app/hashtag/UnrealJam"
+    },
+    "jamID": "11973"
+  },
+  "totalEntries": 421,
+  "ranked": true,
+  "hasCategories": false,
+  "needsManualSelection": false,
+  "categories": [],
+  "topGames": []
+}

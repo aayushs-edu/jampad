@@ -1,0 +1,25 @@
+{
+  "n": 98,
+  "name": "2020 Epic MegaJam",
+  "url": "https://itch.io/jam/2020-epic-megajam",
+  "theme": "It's been a long time, but we're not done yet",
+  "slug": "2020-epic-megajam",
+  "jamMeta": {
+    "jamType": "ongoing",
+    "joined": "",
+    "entries": "336",
+    "title": "2020 Epic MegaJam",
+    "jamURL": "https://itch.io/jam/2020-epic-megajam",
+    "hosts": {
+      "Unreal Engine": "https://unrealengine.itch.io",
+      "#UnrealJam": "https://bsky.app/hashtag/UnrealJam"
+    },
+    "jamID": "18908"
+  },
+  "totalEntries": 324,
+  "ranked": true,
+  "hasCategories": false,
+  "needsManualSelection": false,
+  "categories": [],
+  "topGames": []
+}
