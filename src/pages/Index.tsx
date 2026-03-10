@@ -6,10 +6,12 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import PixelClickEffect from "@/components/PixelClickEffect";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PixelClickEffect />
       <Navbar />
 
       {/* Hero */}
@@ -35,7 +37,7 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6"
           >
-            Your game jam
+            <span className="font-pixel text-3xl md:text-5xl lg:text-6xl">Your game jam</span>
             <br />
             <TypewriterHero />
           </motion.h1>
