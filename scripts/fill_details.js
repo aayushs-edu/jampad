@@ -15,8 +15,8 @@ const { getGame } = require("itch-scraper");
 const fs          = require("fs/promises");
 const path        = require("path");
 
-const OUTPUT_DIR  = path.join(__dirname, "output", "jam_data");
-const MERGED_FILE = path.join(__dirname, "output", "jam_data.json");
+const OUTPUT_DIR  = path.join("data", "jam_data");
+const MERGED_FILE = path.join("data", "jam_data.json");
 
 const REQUEST_DELAY    = 300;
 const MAX_RETRIES      = 2;
@@ -64,13 +64,14 @@ async function main() {
   const raw  = await fs.readFile(MERGED_FILE, "utf-8");
   const jams = JSON.parse(raw);
 
-  // Collect jams that have at least one game missing details
+  // Collect jams that have at least one game missing details or moreInfo
+  const needsScrape = g => !g.details || !g.details.moreInfo;
   const targets = jams.filter(j => {
     if (jamFilter !== null && j.n !== jamFilter) return false;
-    return (j.topGames ?? []).some(g => !g.details);
+    return (j.topGames ?? []).some(needsScrape);
   });
 
-  const totalMissing = targets.reduce((s, j) => s + j.topGames.filter(g => !g.details).length, 0);
+  const totalMissing = targets.reduce((s, j) => s + j.topGames.filter(needsScrape).length, 0);
 
   console.log(`\nFill Details`);
   console.log(`============`);
@@ -81,7 +82,7 @@ async function main() {
   let filled = 0, failed = 0;
 
   for (const jam of targets) {
-    const missing = jam.topGames.filter(g => !g.details);
+    const missing = jam.topGames.filter(needsScrape);
     console.log(`[${jam.n}] ${jam.name} — ${missing.length} game(s) to scrape`);
 
     for (const game of missing) {

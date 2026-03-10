@@ -19,8 +19,8 @@ const fs          = require("fs/promises");
 const path        = require("path");
 const https       = require("https");
 
-const OUTPUT_DIR  = path.join(__dirname, "output", "jam_data");
-const MERGED_FILE = path.join(__dirname, "output", "jam_data.json");
+const OUTPUT_DIR  = path.join("data", "jam_data");
+const MERGED_FILE = path.join("data", "jam_data.json");
 
 const REQUEST_DELAY    = 300;   // ms between requests
 const MAX_RETRIES      = 2;
@@ -105,11 +105,11 @@ async function fetchTopByPopularity(jamID, n) {
   const data = await fetchJson(`https://itch.io/jam/${jamID}/entries.json`);
   const entries = (data.jam_games ?? []).filter(e => e.game?.id != null && e.game?.url);
 
-  // Sort by coolness descending (itch's popularity score), then rating_count as tiebreak
+  // Sort by rating_count descending, then coolness as tiebreak
   entries.sort((a, b) => {
-    const coolDiff = (b.coolness ?? 0) - (a.coolness ?? 0);
-    if (coolDiff !== 0) return coolDiff;
-    return (b.rating_count ?? 0) - (a.rating_count ?? 0);
+    const ratingDiff = (b.rating_count ?? 0) - (a.rating_count ?? 0);
+    if (ratingDiff !== 0) return ratingDiff;
+    return (b.coolness ?? 0) - (a.coolness ?? 0);
   });
 
   return entries.slice(0, n);
@@ -139,7 +139,7 @@ async function processJam(jam) {
   for (let i = 0; i < topEntries.length; i++) {
     const entry   = topEntries[i];
     const gameUrl = entry.game.url;
-    console.log(`  [${i + 1}/${topEntries.length}] ${gameUrl}  (coolness: ${entry.coolness ?? 0})`);
+    console.log(`  [${i + 1}/${topEntries.length}] ${gameUrl}  (ratings: ${entry.rating_count ?? 0}, coolness: ${entry.coolness ?? 0})`);
 
     let details = null;
     try {
@@ -188,7 +188,7 @@ async function main() {
 
   console.log(`\nFill Popular Games`);
   console.log(`==================`);
-  console.log(`Top ${topN} by coolness  |  ${targets.length} jam(s) to process\n`);
+  console.log(`Top ${topN} by rating count  |  ${targets.length} jam(s) to process\n`);
 
   let processed = 0;
   for (const jam of targets) {

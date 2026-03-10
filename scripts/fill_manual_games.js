@@ -23,8 +23,8 @@ const { getGame } = require("itch-scraper");
 const fs          = require("fs/promises");
 const path        = require("path");
 
-const OUTPUT_DIR  = path.join(__dirname, "output", "jam_data");
-const MERGED_FILE = path.join(__dirname, "output", "jam_data.json");
+const OUTPUT_DIR  = path.join("data", "jam_data");
+const MERGED_FILE = path.join("data", "jam_data.json");
 
 const REQUEST_DELAY     = 300;  // ms between scrapes
 const MAX_RETRIES       = 2;
