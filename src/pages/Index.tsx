@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import TypewriterHero from "@/components/TypewriterHero";
 import Navbar from "@/components/Navbar";
@@ -6,11 +7,50 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import JamForm from "@/components/JamForm/JamForm";
+import { JamSubmission } from "@/types/jamSubmission";
+import { saveJamSubmission } from "@/lib/supabase";
+import { toast } from "@/components/ui/sonner";
 
 const Index = () => {
+  const [showForm, setShowForm] = useState(false);
+  const [theme, setTheme] = useState("");
+
+  const handleStartJam = () => {
+    if (theme.trim()) {
+      setShowForm(true);
+    }
+  };
+
+  const handleFormComplete = async (submission: JamSubmission) => {
+    const { data, error } = await saveJamSubmission(submission);
+
+    if (error) {
+      console.error("Error saving submission:", error);
+      toast.error("Failed to save submission");
+    } else {
+      console.log("Submission saved:", data);
+      toast.success("Your jam submission has been saved!");
+    }
+  };
+
+  const handleBackToHome = () => {
+    setShowForm(false);
+    setTheme("");
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
+      <AnimatePresence mode="wait">
+        {!showForm ? (
+          <motion.div
+            key="landing"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
 
       {/* Hero */}
       <section className="relative pt-32 pb-24 px-6 overflow-hidden">
@@ -61,10 +101,23 @@ const Index = () => {
                 <span className="pl-5 text-muted-foreground text-lg">🎮</span>
                 <input
                   type="text"
+                  value={theme}
+                  onChange={(e) => setTheme(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleStartJam();
+                    }
+                  }}
                   placeholder='Enter your jam theme…'
                   className="flex-1 bg-transparent px-4 py-4 text-base md:text-lg text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
                 />
-                <Button variant="hero" size="lg" className="m-1.5 rounded-lg">
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="m-1.5 rounded-lg"
+                  onClick={handleStartJam}
+                  disabled={!theme.trim()}
+                >
                   Start jamming →
                 </Button>
               </div>
@@ -82,12 +135,28 @@ const Index = () => {
         </div>
       </section>
 
-      <div id="features">
-        <Features />
-      </div>
-      <HowItWorks />
-      <CTA />
-      <Footer />
+            <div id="features">
+              <Features />
+            </div>
+            <HowItWorks />
+            <CTA />
+            <Footer />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="form"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <JamForm
+              initialTheme={theme}
+              onComplete={handleFormComplete}
+              onBack={handleBackToHome}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
