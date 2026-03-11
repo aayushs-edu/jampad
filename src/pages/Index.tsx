@@ -61,7 +61,7 @@ const Index = () => {
                 <span className="pl-5 text-muted-foreground text-lg">🎮</span>
                 <input
                   type="text"
-                  placeholder='Enter your jam theme… e.g. "Connections"'
+                  placeholder='Enter your jam theme…'
                   className="flex-1 bg-transparent px-4 py-4 text-base md:text-lg text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
                 />
                 <Button variant="hero" size="lg" className="m-1.5 rounded-lg">
