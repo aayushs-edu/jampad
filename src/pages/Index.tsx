@@ -76,7 +76,7 @@ const Index = () => {
                   className="max-w-xl mx-auto"
                 >
                   <div className="relative group">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500" />
+<div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500" />
                     <div className="relative flex items-center bg-card border-2 border-primary/20 rounded-xl overflow-hidden shadow-xl group-hover:border-primary/40 transition-colors duration-300">
                       <span className="pl-5 text-muted-foreground text-lg">🎮</span>
                       <input
