@@ -21,7 +21,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <InteractiveGrid />
+      <div className="relative z-10">
       <Navbar />
 
       <AnimatePresence mode="wait">
