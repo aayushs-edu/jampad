@@ -35,29 +35,29 @@ const InteractiveGrid = ({
 
     // Light-mode blue-purple palette
     const getColor = (t: number): string => {
-      // Low temp: subtle grid dot color
-      // High temp: blue-purple glow
-      const r = Math.round(110 + t * 90);   // 110 → 200
-      const g = Math.round(100 + t * 40);   // 100 → 140
-      const b = Math.round(180 + t * 75);   // 180 → 255
-      const a = 0.15 + t * 0.55;            // subtle → visible
+      const r = Math.round(110 + t * 90);
+      const g = Math.round(100 + t * 40);
+      const b = Math.round(180 + t * 75);
+      const a = 0.15 + t * 0.55;
       return `rgba(${r}, ${g}, ${b}, ${a})`;
     };
 
     const resize = () => {
-      width = container.offsetWidth;
-      height = container.offsetHeight;
+      width = window.innerWidth;
+      height = window.innerHeight;
       canvas.width = width;
       canvas.height = height;
+      container.style.width = width + "px";
+      container.style.height = height + "px";
       cols = Math.ceil(width / resolution);
       rows = Math.ceil(height / resolution);
       grid = new Float32Array(cols * rows).fill(0);
     };
 
+    // Listen on document so mouse events pass through to UI
     const handleMouseMove = (e: MouseEvent) => {
-      const rect = container.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
+      mouse.x = e.clientX;
+      mouse.y = e.clientY + window.scrollY; // account for scroll
       mouse.active = true;
     };
 
@@ -66,6 +66,9 @@ const InteractiveGrid = ({
     };
 
     const update = () => {
+      // Adjust mouse y for current scroll so grid aligns with viewport
+      const scrollY = window.scrollY;
+
       if (mouse.active) {
         const dx = mouse.x - mouse.prevX;
         const dy = mouse.y - mouse.prevY;
@@ -100,17 +103,20 @@ const InteractiveGrid = ({
 
       ctx.clearRect(0, 0, width, height);
 
-      for (let r = 0; r < rows; r++) {
+      // Only render rows visible in the viewport
+      const startRow = Math.max(0, Math.floor(scrollY / resolution) - 1);
+      const endRow = Math.min(rows, Math.ceil((scrollY + window.innerHeight) / resolution) + 1);
+
+      for (let r = startRow; r < endRow; r++) {
         for (let c = 0; c < cols; c++) {
           const idx = c + r * cols;
           const temp = grid[idx];
           grid[idx] *= coolingFactor;
 
           const x = c * resolution;
-          const y = r * resolution;
+          const y = r * resolution - scrollY; // offset by scroll
 
           if (temp > 0.03) {
-            // Active heated cell
             const size = resolution * (0.6 + temp * 0.6);
             const offset = (resolution - size) / 2;
             ctx.fillStyle = getColor(temp);
@@ -118,8 +124,8 @@ const InteractiveGrid = ({
             ctx.roundRect(x + offset, y + offset, size, size, 3);
             ctx.fill();
           } else {
-            // Subtle always-visible grid dot
-            ctx.fillStyle = "rgba(140, 120, 200, 0.08)";
+            // Subtle always-visible grid dots
+            ctx.fillStyle = "rgba(140, 120, 200, 0.1)";
             ctx.beginPath();
             ctx.arc(x + resolution / 2, y + resolution / 2, 1.2, 0, Math.PI * 2);
             ctx.fill();
@@ -131,16 +137,16 @@ const InteractiveGrid = ({
     };
 
     window.addEventListener("resize", resize);
-    container.addEventListener("mousemove", handleMouseMove);
-    container.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
     resize();
     update();
 
     return () => {
       window.removeEventListener("resize", resize);
-      container.removeEventListener("mousemove", handleMouseMove);
-      container.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseleave", handleMouseLeave);
       cancelAnimationFrame(animId);
     };
   }, [resolution, coolingFactor]);
@@ -148,7 +154,7 @@ const InteractiveGrid = ({
   return (
     <div
       ref={containerRef}
-      className={cn("fixed inset-0 pointer-events-auto z-0", className)}
+      className={cn("fixed inset-0 pointer-events-none z-0", className)}
       style={style}
       {...props}
     >
