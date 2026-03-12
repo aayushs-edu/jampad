@@ -8,6 +8,7 @@ import HowItWorks from "@/components/HowItWorks";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import JamForm from "@/components/JamForm";
+import InteractiveGrid from "@/components/ui/interactive-grid";
 
 const Index = () => {
   const [showForm, setShowForm] = useState(false);
@@ -20,7 +21,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <InteractiveGrid />
+      <div className="relative z-10">
       <Navbar />
 
       <AnimatePresence mode="wait">
@@ -142,6 +145,7 @@ const Index = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 };
