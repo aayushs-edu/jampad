@@ -9,7 +9,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how" className="py-24 px-6 bg-card">
+    <section id="how" className="py-24 px-6 bg-transparent">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <span className="font-pixel text-xs text-primary tracking-wider uppercase">
