@@ -104,6 +104,10 @@ const InteractiveGrid = ({
 
       ctx.clearRect(0, 0, width, height);
 
+      const cx = width / 2;
+      const cy = height / 2;
+      const maxDist = Math.sqrt(cx * cx + cy * cy);
+
       for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
           const idx = c + r * cols;
@@ -113,18 +117,31 @@ const InteractiveGrid = ({
           const x = c * resolution;
           const y = r * resolution;
 
+          // Radial fade: 1.0 at center, 0.0 at edges
+          const dx2 = (x + resolution / 2 - cx);
+          const dy2 = (y + resolution / 2 - cy);
+          const distFromCenter = Math.sqrt(dx2 * dx2 + dy2 * dy2);
+          const radialFade = Math.max(0, 1 - (distFromCenter / maxDist) * 1.3);
+
           if (temp > 0.03) {
             const size = resolution * (0.62 + temp * 0.55);
             const offset = (resolution - size) / 2;
-            ctx.fillStyle = getColor(temp);
+            const tr = Math.round(110 + temp * 90);
+            const tg = Math.round(100 + temp * 40);
+            const tb = Math.round(180 + temp * 75);
+            const ta = (0.14 + temp * 0.5) * radialFade;
+            ctx.fillStyle = `rgba(${tr}, ${tg}, ${tb}, ${ta})`;
             ctx.beginPath();
             ctx.roundRect(x + offset, y + offset, size, size, 3);
             ctx.fill();
           } else {
-            ctx.fillStyle = "rgba(140, 120, 200, 0.12)";
-            ctx.beginPath();
-            ctx.arc(x + resolution / 2, y + resolution / 2, 1.15, 0, Math.PI * 2);
-            ctx.fill();
+            const dotAlpha = 0.12 * radialFade;
+            if (dotAlpha > 0.005) {
+              ctx.fillStyle = `rgba(140, 120, 200, ${dotAlpha})`;
+              ctx.beginPath();
+              ctx.arc(x + resolution / 2, y + resolution / 2, 1.15, 0, Math.PI * 2);
+              ctx.fill();
+            }
           }
         }
       }
