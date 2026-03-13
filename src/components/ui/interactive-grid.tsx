@@ -70,11 +70,11 @@ const InteractiveGrid = ({
       // 2x2 brush footprint
       for (let i = 0; i < 2; i++) {
         for (let j = 0; j < 2; j++) {
-          const c = col + i - 1;
-          const r = row + j - 1;
+          const c = col + i;
+          const r = row + j;
           if (c >= 0 && c < cols && r >= 0 && r < rows) {
             const idx = c + r * cols;
-            grid[idx] = Math.min(1.0, grid[idx] + 0.28);
+            grid[idx] = Math.min(1.0, grid[idx] + 0.18);
           }
         }
       }
