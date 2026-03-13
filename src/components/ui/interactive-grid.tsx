@@ -124,7 +124,7 @@ const InteractiveGrid = ({
           const radialFade = Math.max(0, 1 - Math.pow(distFromCenter / maxDist, 1.5));
 
           if (temp > 0.03) {
-            const size = resolution * (0.62 + temp * 0.55);
+            const size = resolution * (0.4 + temp * 0.35);
             const offset = (resolution - size) / 2;
             const tr = Math.round(110 + temp * 90);
             const tg = Math.round(100 + temp * 40);
