@@ -67,16 +67,9 @@ const InteractiveGrid = ({
       const col = Math.floor(x / resolution);
       const row = Math.floor(y / resolution);
 
-      // 2x2 brush footprint
-      for (let i = 0; i < 2; i++) {
-        for (let j = 0; j < 2; j++) {
-          const c = col + i;
-          const r = row + j;
-          if (c >= 0 && c < cols && r >= 0 && r < rows) {
-            const idx = c + r * cols;
-            grid[idx] = Math.min(1.0, grid[idx] + 0.18);
-          }
-        }
+      if (col >= 0 && col < cols && row >= 0 && row < rows) {
+        const idx = col + row * cols;
+        grid[idx] = Math.min(1.0, grid[idx] + 0.22);
       }
     };
 
